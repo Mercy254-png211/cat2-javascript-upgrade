@@ -50,26 +50,14 @@
             </div>
             <div>
                 <section id="products" name="products">
-                    <h2>Our Products</h2>
-
-
+                   <h2>Our Products</h2>
+                <div class="product-grid" id="productGrid"></div>
+                <img src="images/banner.jpg" alt="Nuts" class="Eureka-banner">
+                <p id="bannerText" class="hidden">
+                    Premium quality Nuts
+                </p>
                 </section>
-
-                <div class="product-grid">
-
-                    <img src="images/cashew nuts.jpeg" alt="Cashew Nuts" width="200">
-                    <h3>Cashew Nuts</h3>
-                    <img src="images/macadamia nuts.jpeg" alt="Macadamia Nuts" width="200">
-                    <h3>Macadamia Nuts</h3>
-
-
-                    <img src="images/mixed nuts 1.jpeg" alt="Mixed Nuts" width="200">
-                    <h3>Mixed Nuts</h3>
-                    <img src="images/Peanuts.jpeg" alt="Peanuts" width="200">
-                    <h3>Roasted Peanuts</h3>
-                    <img src="images/banner.jpg" alt="Eureka Logo" width="200">
-
-                </div>
+                    
                 <div class="product-description">
                     <ul>
 
@@ -114,6 +102,23 @@
                     <li>Phone: +254 729 002890</li>
                     <li>Address: P.O. BOX 13339-00100, Nairobi, Kenya</li>
                 </ul>
+                <h3>Send Us a Message</h3>
+                <form id="contactForm" class="contactForm">
+                    <div class="form-row">
+                        <label for="customerName">Name</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="customerEmail">Email</label>
+                        <input type="email" id="customerEmail" name="customerEmail" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="customerMessage">Message</label>
+                        <textarea id="customerMessage" name="customerMessage" rows="4" required></textarea>
+                    </div>
+                    <button type="submit message" class="contactForm-submit">Submit Message</button>
+                </form>
+                <div id="formResponse" class="form-response"></div>
             </section>
 
         </div>

@@ -222,6 +222,50 @@ section p {
 h2:hover {
     color: var(--primary-green);
 }
+.contactForm {
+    background-color:white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+}
+.form-row {
+    margin-bottom: 15px;
+    display:flex;
+    flex-direction: column;
+}
+.form-row label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+.form-row input,
+.form-row textarea {
+    border: 1px solid var(--gray);
+    border-radius: 7px;
+    padding: 10px;
+}
+.contactForm:hover {
+    transform: translate(0, 5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    color: var(--primary-green);
+}
+
+.contactForm-submit {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contactForm-submit:hover {
+    background-color: var(--light-green);
+}
+
+
 
 footer {
     background-color: var(--primary-green);
