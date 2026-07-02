@@ -59,9 +59,7 @@ products.forEach(product =>{
 
    form.addEventListener("submit", function(event) {
          event.preventDefault();
-         response.textContent = "Thank you for your message! We will get back to you soon.";
-         response.style.color = "green";
-
+        
          const name = document.getElementById("customerName").value;
          const email = document.getElementById("customerEmail").value;
          const message = document.getElementById("customerMessage").value;
@@ -72,6 +70,8 @@ products.forEach(product =>{
 
             return;
          }
+         response.textContent = "Thank you for your message! We will get back to you soon.";
+         response.style.color = "green";
    });
   
 
