@@ -1,0 +1,35 @@
+ Eureka Nuts limited - IMPLEMENTATION NOTES
+
+Student Name: Bundotich Mercy Jepkorir
+
+This work is an upgrade of midterm website work adding Javascript
+
+Task 1.Loop render dynamic textContent
+Created an array of product objects containing the product name, price and the product image.
+-Used the forEach() loop to generate product cards dynamically.
+-Used createElement() and appendChild() to display the products in the productCard.
+
+Task 2.Dynamic wishlist
+-Created a wishlist where users can add products using an input field and button.
+-Used createElement() to create new list items and buttons.
+-Used appendChild() to add each item to the wishlist.
+-Used remove() so each Delete button removes its own wishlist item.
+
+Task 3. ContactForm validation
+-Used preventDefault() to stop the form from reloading the page.
+-Retrieved user input using .value property.
+-Checked whether all required fields were completed.
+-Displayed success or error messages using textContent.
+
+Task 4. Local storage
+-Used localStorage.setItem() to save the customer`s name.
+-Used localStorage.getItem() to restore the saved name when the page reloads.
+-This allows the users name to remain even after refreshing the page.
+
+Task 5. Banner click-to-reveal
+-Added a click event listener to the banner image.
+-Used classList.toggle() to show and hide a message below the banner when it is clicked.
+
+Conclusion.
+In summary,this project demonstrates Javascript concepts including arrays,objects,loops,event handling, form validation,local storage and class toggle.
+

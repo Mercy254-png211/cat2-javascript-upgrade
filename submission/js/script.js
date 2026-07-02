@@ -1,4 +1,4 @@
-
+// Task 1. loop render dynamic content for products
 const products = [
     {
         name: "Cashew nuts",
@@ -33,6 +33,7 @@ products.forEach(product =>{
     
     productGrid.appendChild(productCard);   
 });
+//task 2. wishlist form
    let wishlistForm = document.querySelector("#wishlistForm");
    let wishlistInput = document.querySelector("#wishlistinput");
    let wishlistItems = document.querySelector("#wishlistItems");
@@ -54,6 +55,7 @@ products.forEach(product =>{
            wishlistInput.value = "";
        }
    });
+   // task 3. contact form
    const form = document.getElementById("contactForm");
    const response = document.getElementById("formResponse");
 
@@ -74,7 +76,7 @@ products.forEach(product =>{
          response.style.color = "green";
    });
 
-   //local storage
+   // task 4. local storage
    const customerName = document.getElementById("customerName");
    
    if(localStorage.getItem("customerName")) {
@@ -84,7 +86,7 @@ products.forEach(product =>{
     localStorage.setItem("customerName", customerName.value);
    });
 
-   //classlist toggle
+   // task 5. classlist toggle
    const banner = document.getElementById("banner");
    const bannerText = document.getElementById("bannerText");
 
