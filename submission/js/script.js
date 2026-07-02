@@ -73,6 +73,14 @@ products.forEach(product =>{
          response.textContent = "Thank you for your message! We will get back to you soon.";
          response.style.color = "green";
    });
-  
 
+   //local storage
+   const customerName = document.getElementById("customerName");
+   
+   if(localStorage.getItem("customerName")) {
+       customerName.value = localStorage.getItem("customerName");
+   }
+   customerName.addEventListener("input", function () {
+    localStorage.setItem("customerName", customerName.value);
+   });
 
