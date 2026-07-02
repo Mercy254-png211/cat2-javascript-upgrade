@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -26,6 +26,7 @@
             </ul>
         </nav>
     </header>
+   
     <section class="hero">
     <div class="hero-content"> 
         
@@ -52,6 +53,7 @@
                 <section id="products" name="products">
                    <h2>Our Products</h2>
                 <div class="product-grid" id="productGrid"></div>
+                
                 <img src="images/banner.jpg" alt="Nuts" class="Eureka-banner">
                 <p id="bannerText" class="hidden">
                     Premium quality Nuts
@@ -94,6 +96,22 @@
                 <p>Our mission is to provide our customers with the highest quality nuts while maintaining sustainable
                     and ethical practices throughout our supply chain.</p>
             </section>
+            <section id="dynamic-list-lab">
+        <h2>Dynamic DOM Creation:Eureka Nuts Limited Wishlist</h2>
+        <p>Add items you wish to purchase to your wishlist.Each item will be created dynamically by JavaScript.</p>
+        <form id="wishlistForm">
+            <label for="wishlistInput">Enter an item:</label>
+
+            <div class="form-row">
+                <input type="text" id="wishlistinput" placeholder="Enter an item" required>
+                <button type="submit">Add to Wishlist</button>
+            </div>
+            </form>
+              <ul id="wishlistItems" class="dynamic list">
+                <li> More items will be added here dynamically as you submit the form <button type="button" class="delete-btn">Delete</button></li>
+              </ul>
+       
+    </section>
             <section id="contact" name="contact">
                 <h2>Contact Us</h2>
                 <p>For inquiries, please contact us at:</p>
@@ -134,3 +152,4 @@
 </body>
 
 </html>
+             

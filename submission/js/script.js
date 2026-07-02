@@ -33,8 +33,27 @@ products.forEach(product =>{
     
     productGrid.appendChild(productCard);   
 });
+   let wishlistForm = document.querySelector("#wishlistForm");
+   let wishlistInput = document.querySelector("#wishlistinput");
+   let wishlistItems = document.querySelector("#wishlistItems");
 
+   wishlistForm.addEventListener("submit", function(event) {
+       event.preventDefault();
+       if(wishlistInput.value !== ""){
+           let li = document.createElement("li");
+           let button = document.createElement("button");
+           li.textContent = wishlistInput.value;
+           button.textContent = "Delete";
 
+           button.addEventListener("click", function() {
+               li.remove();
+           });
 
+           li.appendChild(button);
+           wishlistItems.appendChild(li);
+           wishlistInput.value = "";
+       }
+   });
+   
 
 
