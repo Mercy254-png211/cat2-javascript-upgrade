@@ -83,6 +83,17 @@ main {
     flex-direction: column; 
 
 }
+.hidden {
+    display: none;
+}
+.hidden.show {
+    display: block;
+    margin-top:10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-green);
+    text-align: center;
+}
 
 
 section {

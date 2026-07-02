@@ -84,3 +84,11 @@ products.forEach(product =>{
     localStorage.setItem("customerName", customerName.value);
    });
 
+   //classlist toggle
+   const banner = document.getElementById("banner");
+   const bannerText = document.getElementById("bannerText");
+
+    banner.addEventListener("click", function() {
+        bannerText.classList.toggle("hidden");
+    });
+
