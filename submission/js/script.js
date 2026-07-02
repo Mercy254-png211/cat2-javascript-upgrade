@@ -54,6 +54,25 @@ products.forEach(product =>{
            wishlistInput.value = "";
        }
    });
-   
+   const form = document.getElementById("contactForm");
+   const response = document.getElementById("formResponse");
+
+   form.addEventListener("submit", function(event) {
+         event.preventDefault();
+         response.textContent = "Thank you for your message! We will get back to you soon.";
+         response.style.color = "green";
+
+         const name = document.getElementById("customerName").value;
+         const email = document.getElementById("customerEmail").value;
+         const message = document.getElementById("customerMessage").value;
+
+         if(name + email + message === ""){
+            response.textContent = "Please fill in all fields before submitting the form.";
+            response.style.color = "red";
+
+            return;
+         }
+   });
+  
 
 
